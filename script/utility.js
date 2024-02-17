@@ -1,10 +1,10 @@
-// to hide the element
+// to hide the element function
 function hideElementById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add('hidden');
 };
 
-// to show the element
+// to show the element function
 function showElementById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.remove('hidden');
@@ -30,4 +30,33 @@ function getrandomAlphabet() {
 function setBackgroundColorById (elementId) {
   const element = document.getElementById(elementId);
   element.classList.add('bg-orange-400');
+}
+
+// remove background color by id 
+function removeBackgroundColorById (elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.remove('bg-orange-400');
+}
+
+
+// get element value by id function (increase score)
+function getElementValueById (elementId) {
+  const element = document.getElementById(elementId);
+  const elementText = element.innerText;
+  const value = parseInt(elementText);
+  return value;
+}
+
+// to display/change the element 
+function displayElementById (elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+
+
+// to get element text 
+function getElementTextById (elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
 }

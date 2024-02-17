@@ -78,16 +78,18 @@
 
         <!-- lifeline score -->
         <div class="flex justify-between">
+          <!-- life button = -->
           <button class="btn bg-[#894189] border-none text-white rounded-3xl hover:bg-[#894189]">
             Life
             <img src="images/heart.svg" alt="">
-            <span>1</span>
+            <span id="current-life">5</span>
           </button>
 
+          <!-- score button -->
           <button class="btn bg-[#360490] border-none text-white rounded-3xl hover:bg-[#360490]">
             Score
             <img src="images/dollar.svg" alt="">
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </div>
@@ -95,19 +97,20 @@
     <!-- play ground end -->
 
     <!-- final score start -->
-    <section class="score hidden flex justify-center items-center min-h-screen">
+    <section id="final-score" class="hidden flex justify-center items-center min-h-screen">
       <div class="text-white bg-[#FFFFFF33] text-center p-9 rounded-2xl flex flex-col gap-4">
+        <h1 class="text-4xl">Game Over</h1>
         <h1 class="text-6xl">
           <span class="font-extrabold">Score :</span>
-          <span class="font-medium">14</span>
+          <span id="show-last-score" class="font-medium">14</span>
         </h1>
 
-        <button class="btn text-[#010313] text-xl font-semibold">Play Again</button>
+        <button onclick="play()" class="btn text-[#010313] text-xl font-semibold">Play Again</button>
         <p class="text-xl font-medium">Practice will make you Pro</p>
       </div>
     </section>
     <!-- final score end -->
-  </main>
+    </main>
 
   <script src="script/utility.js"></script>
   <script src="script/script.js"></script>
